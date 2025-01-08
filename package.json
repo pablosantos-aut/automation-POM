@@ -1,0 +1,22 @@
+{
+  "name": "automation-pom",
+  "version": "1.0.0",
+  "description": "So here I'll be logging my process in creating my first automation framework from scratch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablosantos-aut/automation-POM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pablosantos-aut/automation-POM/issues"
+  },
+  "homepage": "https://github.com/pablosantos-aut/automation-POM#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.27.0"
+  }
+}
