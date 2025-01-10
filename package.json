@@ -4,7 +4,8 @@
   "description": "So here I'll be logging my process in creating my first automation framework from scratch.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-mocha": "mocha --no-timeouts 'test/mocha/*.js'",
+    "test-mocha-par": "mocha --no-timeouts --parallel 'test/mocha/*.js'"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/pablosantos-aut/automation-POM#readme",
   "dependencies": {
     "chai": "^5.1.2",
+    "mocha": "^11.0.1",
     "selenium-webdriver": "^4.27.0"
   }
 }
