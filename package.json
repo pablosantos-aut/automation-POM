@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/pablosantos-aut/automation-POM#readme",
   "dependencies": {
+    "chai": "^5.1.2",
     "selenium-webdriver": "^4.27.0"
   }
 }

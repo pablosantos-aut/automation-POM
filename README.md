@@ -8,14 +8,14 @@ Just went to Github page, register and created a new private repo. It's pretty s
 
 ## Cloning the repo to my machine failed
 
-The first blocker was to clone this repo to my machine. I thought user-password would do it, but I found out that it's been deprecated since 2013. So here're the first findings in the process and how to solve them:
+The first blocker was to clone this repo to my machine. I thought user-password would do it, but I found out that it's been deprecated since 2013. How to solve it:
 
 1. Go to https://github.com/settings/tokens
 2. Generate New Token
-3. I chose Personal access tokens (classic)
+3. Personal access tokens (classic)
 4. Checked 'repo' only
 5. Input a note (this is kinda like a tag for you to remember the token)
-6. That's it.
+6. Click `Generate`.
 
 After this, I went back to terminal and cloned the repo successfully. So...first victory! :D
 
@@ -27,3 +27,15 @@ Since I'm gonna be using a NodeJS project as basis, first I installed Node and N
 2. Check npm: `npm -v`
 3. Go ahead and initialize the project: `npm init` (hit enter to everything)
 4. Install Selenium: `npm install selenium-webdriver`
+
+## test1.js
+
+This is the very first test I created. I made it using a sample page from LambdaTest. It pretty much goes to the sample page, adds a new item to the todo list, and then asserts if the item was indeed created. That's it. 
+
+1. Learned that `.sendKeys("This is a NEW Item",Key.RETURN)` is the way to input text or hitting keyboard keys.
+2. `By.xpath("//li[last()]")` get the last item in the `<li>` element. Still don't understand quite well how to use the xpath, specially because it needs a `.then(function(value){return value;});` to actually work. Need some studying to do here. (!)
+3. The assertions are made in two ways: NodeJS and Chai library. Loved the readbility of Chai assertions. I don't see much more difference than that between them.
+
+## test2.js
+
+Here is pretty much the same test as above, but it's encapsulated in a try-catch. I'm not sure how useful are these since the assertions actually return the failures of the test cases. (!)
