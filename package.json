@@ -4,8 +4,8 @@
   "description": "So here I'll be logging my process in creating my first automation framework from scratch.",
   "main": "index.js",
   "scripts": {
-    "test-mocha": "mocha --no-timeouts 'test/mocha/*.js'",
-    "test-mocha-par": "mocha --no-timeouts --parallel 'test/mocha/*.js'"
+    "test-mocha": "mocha --no-timeouts 'basicLearningTests/mocha/*.js'",
+    "test-mocha-par": "mocha --no-timeouts --parallel 'basicLearningTests/mocha/*.js'"
   },
   "repository": {
     "type": "git",

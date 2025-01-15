@@ -39,3 +39,7 @@ This is the very first test I created. I made it using a sample page from Lambda
 ## test2.js
 
 Here is pretty much the same test as above, but it's encapsulated in a try-catch. I'm not sure how useful are these since the assertions actually return the failures of the test cases. (!)
+
+## test3.js & test4.js
+
+They're pretty much the same tests as test1 and test2, but they're organize in describe/it in order to check Mocha framework out. Turned out ot be interesting and I believe will be the framework for the actual purpose of this repo.
