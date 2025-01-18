@@ -13,8 +13,7 @@ describe("Describe block to group tests", function () {
 
    it("Chrome Homepage loads", function () {
       homepage.goto_URL(homepage_url);
-      let hero_present = homepage.hero_is_present();
-      hero_present.should.equal(true); // PREGUNTAR SOBRE ESTE ESTE ASSERT Y CÓMO DEBUGGEAR LA EJECUCIÓN
+      homepage.hero_is_present().should.equal(true); // PREGUNTAR SOBRE ESTE ESTE ASSERT Y CÓMO DEBUGGEAR LA EJECUCIÓN
    });
 
 });
