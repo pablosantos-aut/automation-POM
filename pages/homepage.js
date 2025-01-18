@@ -4,15 +4,15 @@ var webdriver = require("selenium-webdriver");
 const locator = require("../utils/locators.json");
 
 class Homepage extends BasePage {
-   hero_is_present(){
+   hero_is_present() {
       try {
-         driver.findElement(By.className(locator.homepage_hero));         
+         driver.findElement(By.className(locator.homepage_hero));
       } catch (NoSuchElementException) {
          return false;
       }
-      return true; 
-   }  
-   
+      return true;
+   }
+
 }
 
 module.exports = new Homepage();
