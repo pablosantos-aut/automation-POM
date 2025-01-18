@@ -43,3 +43,12 @@ Here is pretty much the same test as above, but it's encapsulated in a try-catch
 ## test3.js & test4.js
 
 They're pretty much the same tests as test1 and test2, but they're organize in describe/it in order to check Mocha framework out. Turned out ot be interesting and I believe will be the framework for the actual purpose of this repo.
+
+## POM 
+
+Alright so first things first: folder structure. 
+
+1. base: to put actions commons to everything 
+2. pages: to put all the page-objects realted to each page
+3. tests: to put all tests
+4. utils: to put auxiliary functions, enums, jsons, etc. that help out the framework execution
