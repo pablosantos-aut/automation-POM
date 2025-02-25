@@ -52,3 +52,8 @@ Alright so first things first: folder structure.
 2. pages: to put all the page-objects realted to each page
 3. tests: to put all tests
 4. utils: to put auxiliary functions, enums, jsons, etc. that help out the framework execution
+
+How to run the project?
+
+1. hit `npm install`
+2. hit `npm test tests/homepage_test.js`

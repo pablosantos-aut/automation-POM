@@ -1,4 +1,3 @@
 {
-   "homepage_hero": "chr-headline-0",
-   "eng_hero_download_button": "js-download-hero"
+   "homepageHeroButton": "#js-download-hero.chr-download-button[type='button']"
 }
