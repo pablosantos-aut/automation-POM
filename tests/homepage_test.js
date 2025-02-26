@@ -1,14 +1,18 @@
 const { describe, it } = require("mocha");
-const { By, until } = require("selenium-webdriver");
+const { By, until, Builder } = require("selenium-webdriver");
 const homepage = require("../pages/homepage");
 var should = require("chai").should();
 const urls = require("../utils/urls.json")
 const locators = require("../utils/locators.json")
 
-describe("Describe block to group tests", function () {
+describe("Chrome Homepage Test Cases", function () {
 
-   afterEach(function () {
-      driver.close();
+   before(async function () {
+       this.driver = driver;
+   });
+
+   after(async function () {
+       driver.close();
    });
 
    it("Chrome Homepage loads", async function () {

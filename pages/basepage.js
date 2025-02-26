@@ -1,19 +1,14 @@
 var webdriver = require("selenium-webdriver");
-const { until } = require("selenium-webdriver");
-
-var driver = new webdriver.Builder().forBrowser("chrome").build();
-driver.manage().setTimeouts({ implicit: (10000) });
+const { until, Builder } = require("selenium-webdriver");
 
 class BasePage {
+   
    constructor() {
-      global.driver = driver;
+      global.driver = new webdriver.Builder().forBrowser("chrome").build();;
    }
 
    async waitForUrlContains(urlPart, timeout) {
-      await driver.wait(
-         until.urlContains(urlPart),
-         timeout,
-         `URL does not contain "${urlPart}"`
+      await driver.wait(until.urlContains(urlPart), timeout, `URL does not contain "${urlPart}"`
       );
    }
 
@@ -21,12 +16,9 @@ class BasePage {
       try {
          await driver.get(url);
          const readyState = await driver.executeScript('return document.readyState');
-         console.log("readyState is: ", readyState);
          if (readyState === 'complete') {
-            console.log('Website loaded successfully');
             return true;
          } else {
-            console.log('Website failed to load completely');
             return false;
          }
       } catch (error) {
